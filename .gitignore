@@ -1,0 +1,31 @@
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts and packages
+*.zip
+*.rar
+*.7z
+super-fertility-v*.zip
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Development notes
+/dev-notes/
+/scratch/
+
+# Old reference files (kept for reference but excluded from repo)
+info*.txt
+prd.md
+farms/

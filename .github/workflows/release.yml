@@ -1,0 +1,65 @@
+name: Create mod.io Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # Triggers on version tags like v1.0.0, v1.2.3, etc.
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+      
+      - name: Create mod.io package
+        run: |
+          # Create temporary directory for mod files
+          mkdir -p super-fertility
+          
+          # Copy essential mod files only
+          cp modinfo.json super-fertility/
+          cp -r data super-fertility/
+          cp README.md super-fertility/
+          cp LICENSE super-fertility/
+          
+          # Create zip file with super-fertility folder inside
+          zip -r super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip super-fertility
+          
+          # Show what's included
+          echo "📦 Package contents:"
+          unzip -l super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip
+          body: |
+            ## Super Fertility v${{ steps.get_version.outputs.VERSION }}
+            
+            🎮 **Ready for mod.io!**
+            
+            ### Installation
+            1. Download `super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip`
+            2. Extract to Anno 117 mods folder: `Documents/Anno 117 Pax Romana/mods/`
+            3. Launch game and enjoy overpowered farms!
+            
+            ### What's Included
+            - 72 module limit for all farm types (7+2=9!)
+            - 14 farm types across all regions
+            - Better organization and layout flexibility
+            - Quality of life improvement
+            
+            See [README.md](https://github.com/${{ github.repository }}/blob/main/README.md) for full details.
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

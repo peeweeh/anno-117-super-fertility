@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModOps>
+     <ModOp GUID="2799" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+
+    <ModOp GUID="2698" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="2693" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  
+  <ModOp GUID="2699" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="5972" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="2669" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="5971" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="31762" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="2200" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="2800" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="23723" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="2694" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="5849" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+  <ModOp GUID="31764" Type="merge"  Path="/Values/ModuleOwner/ModuleLimits/Main">
+        <Limit>72</Limit>
+  </ModOp>
+</ModOps>

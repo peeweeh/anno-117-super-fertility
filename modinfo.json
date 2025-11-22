@@ -1,0 +1,19 @@
+{
+  "Anno": 8,
+  "ModID": "super-fertility-mod",
+  "Version": "1.0.0",
+  "Difficulty": "unchanged",
+  "GameSetup": {
+    "RequiresNewGame": false,
+    "SafeToRemove": true
+  },
+  "ModName": {
+    "English": "Super Fertility"
+  },
+  "Description": {
+    "English": "Quality of life mod that increases farm module limits to 72 for all farm types, allowing better layouts and organization. Lucky number 7+2=9!"
+  },
+  "Category": {
+    "English": "Gameplay"
+  }
+}
