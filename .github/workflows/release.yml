@@ -21,17 +21,13 @@ jobs:
       
       - name: Create mod.io package
         run: |
-          # Create temporary directory for mod files
-          mkdir -p super-fertility
-          
-          # Copy essential mod files only
-          cp modinfo.json super-fertility/
-          cp -r data super-fertility/
-          cp README.md super-fertility/
-          cp LICENSE super-fertility/
-          
-          # Create zip file with super-fertility folder inside
-          zip -r super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip super-fertility
+          # Create zip file with mod files directly (no containing folder)
+          # This ensures extraction creates the mod folder in the user's mods directory
+          zip -r super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip \
+            modinfo.json \
+            data/ \
+            README.md \
+            LICENSE
           
           # Show what's included
           echo "📦 Package contents:"
