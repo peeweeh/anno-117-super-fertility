@@ -21,13 +21,11 @@ jobs:
       
       - name: Create mod.io package
         run: |
-          # Create zip file with mod files directly (no containing folder)
-          # This ensures extraction creates the mod folder in the user's mods directory
-          zip -r super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip \
-            modinfo.json \
-            data/ \
-            README.md \
-            LICENSE
+          # Create zip file with clean folder structure
+          # Extract will create super-fertility folder in mods directory
+          mkdir -p super-fertility
+          cp -r modinfo.json data/ README.md LICENSE super-fertility/
+          zip -r super-fertility-v${{ steps.get_version.outputs.VERSION }}.zip super-fertility/
           
           # Show what's included
           echo "📦 Package contents:"
