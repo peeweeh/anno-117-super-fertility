@@ -253,14 +253,18 @@ When uploading to mod.io, use these details:
 
 **Maturity Rating:** Everyone
 
-**File to Upload:** `super-fertility-v1.0.0.zip` (from GitHub Releases)
+**File to Upload:** `super-fertility-v1.0.1.zip` (from GitHub Releases)
 
-**Changelog (v1.0.0):**
+**Changelog:**
 ```
-Initial release:
+## [1.0.1] - 2025-12-20
+- Updated release workflow for better mod.io compatibility
+- Improved GitHub release automation
+
+## [1.0.0] - 2024-11-22
+- Initial release
 - Increases module limit to 72 for all farm types (7+2=9!)
-- Affects 14 farm buildings across all regions
-- Compatible with existing saves
+- Affects 14 different farm buildings across Latium and Albion
 ```
 
 ---
