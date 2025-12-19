@@ -1,7 +1,7 @@
 {
   "Anno": 8,
   "ModID": "super-fertility-mod",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Difficulty": "unchanged",
   "GameSetup": {
     "RequiresNewGame": false,

@@ -169,6 +169,10 @@ Before releasing:
 
 ## 📝 Changelog
 
+### [1.0.1] - 2025-12-20
+- Updated release workflow for better mod.io compatibility
+- Improved GitHub release automation
+
 ### [1.0.0] - 2024-11-22
 - Initial release
 - Increases module limit to 72 for all farm types (7+2=9!)
