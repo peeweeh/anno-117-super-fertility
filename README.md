@@ -55,7 +55,7 @@ All farm types get their module limit increased to 72:
 | **5971** | Date Plantation (Albion) | 72 |
 | **31762** | Farm (Albion) | 72 |
 | **31750** | Farm (Albion) | 72 |
-| **2200** | Farm (Arabia) | 72 |
+| **2200** | Farm | 72 |
 | **2800** | Farm (General) | 72 |
 | **23723** | Plantation (General) | 72 |
 | **2694** | Additional Farm | 72 |
@@ -176,7 +176,7 @@ Before releasing:
 ### [1.0.0] - 2024-11-22
 - Initial release
 - Increases module limit to 72 for all farm types (7+2=9!)
-- Affects 14 different farm buildings across Latium, Albion, and Arabia
+- Affects 14 different farm buildings across Latium, and Albion
 
 ## 📜 License
 
@@ -217,7 +217,7 @@ When uploading to mod.io, use these details:
 
 <ul>
 <li><strong>72 Module Limit</strong> - Build massive, organized farm layouts (7+2=9 for good luck!)</li>
-<li><strong>14 Farm Types</strong> - Works across Latium, Albion, and Arabia regions</li>
+<li><strong>14 Farm Types</strong> - Works across Latium, and Albion regions</li>
 <li><strong>No Cheats</strong> - Only changes module limits, production and costs unchanged</li>
 </ul>
 
