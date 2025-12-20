@@ -1,11 +1,11 @@
 # Super Fertility - Anno 117: Pax Romana
 
 [![Anno 117](https://img.shields.io/badge/Anno%20117-Pax%20Romana-red)](https://www.anno-union.com/games/anno-117-pax-romana/)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/peeweeh/anno-117-super-fertility/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue)](https://github.com/peeweeh/anno-117-super-fertility/releases)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Me-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/mrfixit027)
 
-Simple quality-of-life mod for Anno 117: Pax Romana that increases farm module limits to 60, allowing for better organization and more aesthetic farm layouts.
+Simple quality-of-life mod for Anno 117: Pax Romana that increases farm module limits to 72, allowing for better organization and more aesthetic farm layouts.
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -54,7 +54,7 @@ All farm types get their module limit increased to 72:
 | **2669** | Grape Plantation (Latium) | 72 |
 | **5971** | Date Plantation (Albion) | 72 |
 | **31762** | Farm (Albion) | 72 |
-| **31750** | Farm (Albion) | 72 |
+| **31764** | Farm (Albion) | 72 |
 | **2200** | Farm | 72 |
 | **2800** | Farm (General) | 72 |
 | **23723** | Plantation (General) | 72 |
@@ -87,10 +87,8 @@ All farm types get their module limit increased to 72:
 The mod uses ModOps in `assets.xml` to modify farm properties:
 
 ```xml
-<ModOp Type="merge" GUID="[FARM_GUID]" Path="/Values/Standard">
-  <ProductionMultiplier>2</ProductionMultiplier>
-  <MaintenanceMultiplier>0.5</MaintenanceMultiplier>
-  <ModuleLimit>60</ModuleLimit>
+<ModOp Type="merge" GUID="[FARM_GUID]" Path="/Values/ModuleOwner/ModuleLimits/Main">
+  <Limit>72</Limit>
 </ModOp>
 ```
 
@@ -168,6 +166,11 @@ Before releasing:
 5. Upload to mod.io and GitHub
 
 ## 📝 Changelog
+
+### [1.0.2] - 2025-12-20
+- Documentation fixes to match actual ModOps (72-limit only; no production or maintenance tweaks)
+- Corrected Albion farm GUID reference in table
+- Updated release badge and packaging target
 
 ### [1.0.1] - 2025-12-20
 - Updated release workflow for better mod.io compatibility
@@ -253,10 +256,15 @@ When uploading to mod.io, use these details:
 
 **Maturity Rating:** Everyone
 
-**File to Upload:** `super-fertility-v1.0.1.zip` (from GitHub Releases)
+**File to Upload:** `super-fertility-v1.0.2.zip` (from GitHub Releases)
 
 **Changelog:**
 ```
+## [1.0.2] - 2025-12-20
+- Documentation fixes to match actual ModOps (72-limit only; no production or maintenance tweaks)
+- Corrected Albion farm GUID reference in table
+- Updated release badge and packaging target
+
 ## [1.0.1] - 2025-12-20
 - Updated release workflow for better mod.io compatibility
 - Improved GitHub release automation
